@@ -1,0 +1,25 @@
+@import './utils/_variables.scss';
+@import './utils/_visually-hidden.scss';
+@import './utils/_active-tab.scss';
+
+@import './base/_body.scss';
+@import './base/_nulification.scss';
+@import './base/_flex-wrapper.scss';
+@import './base/_main-container.scss';
+@import './base/_section-paddings.scss';
+
+@import './components/_headers.scss';
+@import './components/_btns.scss';
+@import './components/_logo.scss';
+@import './components/_social-links-list.scss';
+
+@import './layout/_header.scss';
+@import './layout/_hero.scss';
+@import './layout/_pros.scss';
+@import './layout/_areas.scss';
+@import './layout/_team.scss';
+@import './layout/_clients-list.scss';
+@import './layout/_footer.scss';
+@import './layout/_portfolio.scss';
+
+@import './modals/_hero-modal.scss';

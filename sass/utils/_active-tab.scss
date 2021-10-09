@@ -1,0 +1,7 @@
+.active {
+  color: var(--hover-color);
+
+  .nav-list-link::after {
+    background-color: var(--hover-color);
+  }
+}

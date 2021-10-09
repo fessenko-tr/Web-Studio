@@ -1,0 +1,141 @@
+.footer {
+  background-color: var(--alternative-bg-color);
+  font-size: 14px;
+  line-height: 1.71;
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      text-align: left;
+    }
+  }
+
+  .social-list-icon {
+    fill: var(--secondary-color);
+  }
+
+  .social-list-link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .social-list-link:hover,
+  .social-list-link:focus {
+    background-color: var(--hover-color);
+  }
+}
+
+.footer-left {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+}
+
+.footer-address {
+  font-style: normal;
+  margin-bottom: 60px;
+
+  .link {
+    display: block;
+  }
+}
+.footer-address-line {
+  color: var(--secondary-color);
+}
+.footer-address-email,
+.footer-address-phone {
+  color: var(--secondary-color);
+  opacity: 60%;
+}
+
+.footer-address-line,
+.footer-address-email {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-contacts,
+.footer-join {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-left,
+  .footer-right {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+.footer-join-text,
+.footer-form-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--secondary-color);
+  line-height: 1.14;
+  margin-bottom: 20px;
+}
+
+.footer-join {
+  margin-bottom: 60px;
+}
+
+.footer-form-wrapper {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer-form-input {
+  margin-bottom: 20px;
+
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  padding: 15px 0 16px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--secondary-color);
+  margin-right: 12px;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form-btn {
+  display: flex;
+  min-width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    padding-left: 29px;
+  }
+}
+
+.footer-form-icon {
+  margin-left: 10px;
+  fill: var(--secondary-color);
+}

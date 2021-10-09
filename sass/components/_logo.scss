@@ -1,0 +1,31 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .header &.link:hover,
+  .header &.link:focus {
+    color: var(--primary-color);
+  }
+
+  .header & {
+    margin-right: 94px;
+    color: var(--primary-color);
+  }
+
+  > span {
+    color: var(--hover-color);
+  }
+
+  .footer & {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+  }
+}

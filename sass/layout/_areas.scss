@@ -1,0 +1,35 @@
+.areas.section {
+  padding-top: 47px;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.areas-list {
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--grid-gap));
+  margin-top: calc(-1 * var(--grid-gap));
+}
+.areas-list-card {
+  flex-basis: calc(100% / 3 - var(--grid-gap));
+  margin-top: var(--grid-gap);
+  margin-left: var(--grid-gap);
+  position: relative;
+}
+
+.areas-list-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
