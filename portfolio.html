@@ -18,24 +18,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-08</title>
   </head>
   <body>
-    <header class="header portfolio">
-      <div class="container wrapper">
-        <nav class="header-nav wrapper">
-          <a href="./index.html" class="logo link link"><span>Web</span>Studio</a>
-          <ul class="nav-list list wrapper">
-            <li><a href="./index.html" class="link nav-list-link">Студия</a></li>
-            <li class="active">
-              <a href="./portfolio.html " class="link nav-list-link">Портфолио</a>
-            </li>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+          <ul class="nav-list list">
+            <li class="active"><a href="./index.html" class="link nav-list-link">Студия</a></li>
+            <li><a href="./portfolio.html " class="link nav-list-link">Портфолио</a></li>
             <li><a href="" class="link nav-list-link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contact-list list wrapper">
+        <ul class="contact-list list">
           <li class="contact-list-item">
-            <a href="mailto:info@devstudio.com" class="contact-list-link link wrapper">
+            <a href="mailto:info@devstudio.com" class="contact-list-link link">
               <svg class="contact-list-icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
@@ -43,12 +41,12 @@
             >
           </li>
           <li class="contact-list-item">
-            <a href="tel:+380961111111" class="contact-list-link link wrapper">
+            <a href="tel:+380961111111" class="contact-list-link link">
               <svg class="contact-list-icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11
-            </a>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -60,22 +58,40 @@
       <section class="works section">
         <div class="container">
           <h1 class="visually-hidden">Наши работы</h1>
-          <ul class="filter-list list wrapper">
-            <li><button type="button" class="btn works-btn">Все</button></li>
-            <li><button type="button" class="btn works-btn">Веб-сайты</button></li>
-            <li><button type="button" class="btn works-btn">Приложения</button></li>
-            <li><button type="button" class="btn works-btn">Дизайн</button></li>
-            <li><button type="button" class="btn works-btn">Маркетинг</button></li>
+
+          <ul class="filter-list list">
+            <li class="filter-list-item">
+              <button type="button" class="btn works-btn">Все</button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="btn works-btn">Веб-сайты</button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="btn works-btn">Приложения</button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="btn works-btn">Дизайн</button>
+            </li>
+            <li class="filter-list-item">
+              <button type="button" class="btn works-btn">Маркетинг</button>
+            </li>
           </ul>
-          <ul class="works-cards list wrapper">
+          <ul class="works-cards list">
             <li class="works-card">
               <a href="" class="works-card-link link">
                 <div class="works-hovertext-wrapper">
-                  <img
-                    src="./images/projects/project-1.jpg"
-                    alt="Ноутбук с представителями компании"
-                    width="370"
-                  />
+                  <picture>
+                    <source srcset="./images/projects/project-1.jpg" media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/projects/project-1-tablet.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/projects/project-1-mobile.jpg"
+                      alt="Ноутбук с представителями компании"
+                      width="370"
+                    />
+                  </picture>
                   <p class="works-card-hovertext">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -92,7 +108,18 @@
             <li class="works-card">
               <a href="" class="works-card-link link">
                 <div class="works-hovertext-wrapper">
-                  <img src="./images/projects/project-2.jpg" alt="два баскетболиста" width="370" />
+                  <picture>
+                    <source srcset="./images/projects/project-2.jpg" media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/projects/project-2-tablet.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/projects/project-2-mobile.jpg"
+                      alt="два баскетболиста"
+                      width="370"
+                    />
+                  </picture>
                   <p class="works-card-hovertext">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -109,7 +136,18 @@
             <li class="works-card">
               <a href="" class="works-card-link link">
                 <div class="works-hovertext-wrapper">
-                  <img src="./images/projects/project-3.jpg" alt="логотип ресторана" width="370" />
+                  <picture>
+                    <source srcset="./images/projects/project-3.jpg" media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/projects/project-3-tablet.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/projects/project-3-mobile.jpg"
+                      alt="логотип ресторана"
+                      width="370"
+                    />
+                  </picture>
                   <p class="works-card-hovertext">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -126,7 +164,14 @@
             <li class="works-card">
               <a href="" class="works-card-link link">
                 <div class="works-hovertext-wrapper">
-                  <img src="./images/projects/project-4.jpg" alt="наушники" width="370" />
+                  <picture>
+                    <source srcset="./images/projects/project-4.jpg" media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/projects/project-4-tablet.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img src="./images/projects/project-4-mobile.jpg" alt="наушники" width="370" />
+                  </picture>
                   <p class="works-card-hovertext">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -143,7 +188,18 @@
             <li class="works-card">
               <a href="" class="works-card-link link">
                 <div class="works-hovertext-wrapper">
-                  <img src="./images/projects/project-5.jpg" alt="две коробки" width="370" />
+                  <picture>
+                    <source srcset="./images/projects/project-5.jpg" media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/projects/project-5-tablet.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/projects/project-5-mobile.jpg"
+                      alt="две коробки"
+                      width="370"
+                    />
+                  </picture>
                   <p class="works-card-hovertext">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -160,7 +216,14 @@
             <li class="works-card">
               <a href="" class="works-card-link link">
                 <div class="works-hovertext-wrapper">
-                  <img src="./images/projects/project-6.jpg" alt="монитор" width="370" />
+                  <picture>
+                    <source srcset="./images/projects/project-6.jpg" media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/projects/project-6-tablet.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img src="./images/projects/project-6-mobile.jpg" alt="монитор" width="370" />
+                  </picture>
                   <p class="works-card-hovertext">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -177,7 +240,14 @@
             <li class="works-card">
               <a href="" class="works-card-link link">
                 <div class="works-hovertext-wrapper">
-                  <img src="./images/projects/project-7.jpg" alt="журнал" width="370" />
+                  <picture>
+                    <source srcset="./images/projects/project-7.jpg" media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/projects/project-7-tablet.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img src="./images/projects/project-7-mobile.jpg" alt="журнал" width="370" />
+                  </picture>
                   <p class="works-card-hovertext">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -194,7 +264,18 @@
             <li class="works-card">
               <a href="" class="works-card-link link">
                 <div class="works-hovertext-wrapper">
-                  <img src="./images/projects/project-8.jpg" alt="фирменный ярлык" width="370" />
+                  <picture>
+                    <source srcset="./images/projects/project-8.jpg" media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/projects/project-8-tablet.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/projects/project-8-mobile.jpg"
+                      alt="фирменный ярлык"
+                      width="370"
+                    />
+                  </picture>
                   <p class="works-card-hovertext">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -211,11 +292,18 @@
             <li class="works-card">
               <a href="" class="works-card-link link">
                 <div class="works-hovertext-wrapper">
-                  <img
-                    src="./images/projects/project-9.jpg"
-                    alt="человек, работающий за ноутбуком"
-                    width="370"
-                  />
+                  <picture>
+                    <source srcset="./images/projects/project-9.jpg" media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/projects/project-9-tablet.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="./images/projects/project-9-mobile.jpg"
+                      alt="человек, работающий за ноутбуком"
+                      width="370"
+                    />
+                  </picture>
                   <p class="works-card-hovertext">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -236,7 +324,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container wrapper">
+      <div class="container">
         <div class="footer-left">
           <div class="footer-contacts">
             <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
@@ -283,8 +371,8 @@
           </div>
         </div>
         <div class="footer-right">
+          <p class="footer-form-text">Подпишитесь на рассылку</p>
           <form class="footer-form">
-            <p class="footer-form-text">Подпишитесь на рассылку</p>
             <div class="footer-form-wrapper">
               <input
                 class="footer-form-input"

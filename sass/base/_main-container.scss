@@ -1,6 +1,12 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (max-width: 768px) {
+    .header & {
+      margin: 0;
+    }
+  }
 }
 
 @media screen and (min-width: 480px) {
