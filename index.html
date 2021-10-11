@@ -51,6 +51,15 @@
             >
           </li>
         </ul>
+        <button
+          class="mobile-btn menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" class="mobile-menu-icon">
+            <use href="./images/sprite.svg#mobile-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--/ХЕДЕР -->
@@ -163,7 +172,7 @@
                 <source
                   srcset="
                     ./images/members/member-1-desktop.jpg,
-                    ./images/members/member-1-mobile2x.jpg 2x
+                    ./images/members/member-1-desktop2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
@@ -176,6 +185,10 @@
                 />
                 <img
                   class="team-cards-photo"
+                  srcset="
+                    ./images/members/member-1-mobile.jpg,
+                    ./images/members/member-1-mobile2x.jpg 2x
+                  "
                   src="./images/members/member-1-mobile.jpg"
                   alt="фотография Игоря"
                 />
@@ -222,14 +235,27 @@
             <li class="team-card">
               <picture>
                 <source
-                  srcset="./images/members/member-2-desktop.jpg"
+                  srcset="
+                    ./images/members/member-2-desktop.jpg,
+                    ./images/members/member-2-desktop2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
-                <source srcset="./images/members/member-2-tablet.jpg" media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/members/member-2-tablet.jpg,
+                    ./images/members/member-2-tablet2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
                 <img
                   class="team-cards-photo"
+                  srcset="
+                    ./images/members/member-2-mobile.jpg,
+                    ./images/members/member-2-mobile2x.jpg 2x
+                  "
                   src="./images/members/member-2-mobile.jpg"
-                  alt="фотография Ольги"
+                  alt="фотография Игоря"
                 />
               </picture>
               <div class="team-cards-content">
@@ -274,14 +300,27 @@
             <li class="team-card">
               <picture>
                 <source
-                  srcset="./images/members/member-3-desktop.jpg"
+                  srcset="
+                    ./images/members/member-3-desktop.jpg,
+                    ./images/members/member-3-desktop2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
-                <source srcset="./images/members/member-3-tablet.jpg" media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/members/member-3-tablet.jpg,
+                    ./images/members/member-3-tablet2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
                 <img
                   class="team-cards-photo"
+                  srcset="
+                    ./images/members/member-3-mobile.jpg,
+                    ./images/members/member-3-mobile2x.jpg 2x
+                  "
                   src="./images/members/member-3-mobile.jpg"
-                  alt="фотография Николая"
+                  alt="фотография Игоря"
                 />
               </picture>
               <div class="team-cards-content">
@@ -326,14 +365,27 @@
             <li class="team-card">
               <picture>
                 <source
-                  srcset="./images/members/member-4-desktop.jpg"
+                  srcset="
+                    ./images/members/member-4-desktop.jpg,
+                    ./images/members/member-4-desktop2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
-                <source srcset="./images/members/member-4-tablet.jpg" media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/members/member-4-tablet.jpg,
+                    ./images/members/member-4-tablet2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
                 <img
                   class="team-cards-photo"
+                  srcset="
+                    ./images/members/member-4-mobile.jpg,
+                    ./images/members/member-4-mobile2x.jpg 2x
+                  "
                   src="./images/members/member-4-mobile.jpg"
-                  alt="фотография Михаила"
+                  alt="фотография Игоря"
                 />
               </picture>
               <div class="team-cards-content">
@@ -510,7 +562,7 @@
 
     <!-- МОДАЛКА -->
 
-    <!-- <div class="modal is-hidden" data-modal>
+    <div class="modal is-hidden" data-modal>
       <div class="modal-box">
         <button class="modal-box-btn" type="submit" data-modal-close>
           <svg width="18" height="18" class="modal-use-icon">
@@ -574,10 +626,48 @@
           <button class="modal-form-btn btn hero-btn" type="submit">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <!-- /МОДАЛКА -->
 
-    <!-- <script src="./js/modal.js"></script> -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-btn menu-toggle js-close-menu">
+        <svg width="40" height="40" class="mobile-menu-icon">
+          <use href="./images/sprite.svg#icon-close-icon"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav-list list">
+        <li class="mobile-nav-item active">
+          <a class="mobile-nav-link link" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-nav-item"><a class="mobile-nav-link link" href="">Контакты</a></li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-phone">
+          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-email">
+          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item"><a class="link" href="">Instagram</a></li>
+        <li class="mobile-socials-item"><a class="link" href="">Twitter</a></li>
+        <li class="mobile-socials-item"><a class="link" href="">Facebook</a></li>
+        <li class="mobile-socials-item"><a class="link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

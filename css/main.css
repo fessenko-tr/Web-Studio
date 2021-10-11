@@ -71,9 +71,13 @@ img {
   padding-right: 15px;
 }
 
-@media screen and (max-width: 768px) {
-  .header .container {
-    margin: 0;
+.header .container {
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    align-items: baseline;
   }
 }
 
@@ -240,6 +244,116 @@ img {
   margin-right: 10px;
 }
 
+.js-open-menu {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .js-open-menu {
+    display: none;
+  }
+}
+
+.js-close-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.js-close-menu:hover .mobile-menu-icon {
+  fill: var(--hover-color);
+}
+
+.mobile-menu-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.js-close-menu:hover .mobile-menu-icon,
+.js-open-menu:hover .mobile-menu-icon {
+  fill: var(--hover-color);
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 0;
+  padding-left: 40px;
+  background-color: #fff;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.mobile-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.mobile-nav-list {
+  font-size: 40px;
+  line-height: 1.17;
+  color: var(--primary-color);
+}
+
+.mobile-nav-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-nav-item:hover, .mobile-nav-item:focus {
+  color: var(--hover-color);
+}
+
+.mobile-contacts {
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+
+.mobile-contacts-phone {
+  margin-bottom: 32px;
+  font-size: 34px;
+  line-height: 1.17;
+  color: var(--hover-color);
+}
+
+.mobile-contacts-email {
+  font-size: 24px;
+  line-height: 1.16;
+  color: var(--text-color);
+}
+
+.mobile-socials {
+  display: flex;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--hover-color);
+}
+
+.mobile-socials-item:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  padding: 0 10px;
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 768px) {
   .nav-list,
   .contact-list {
@@ -251,8 +365,7 @@ img {
   .contact-list-link,
   .contact-list,
   .header-nav,
-  .nav-list,
-  .header .container {
+  .nav-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -873,7 +986,6 @@ img {
 }
 
 .works-card-link:hover, .works-card-link:focus {
-  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -942,11 +1054,22 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: var(--secondary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-box {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-box {
+    max-width: none;
+    width: 528px;
+  }
 }
 
 .modal-box-btn {
@@ -977,8 +1100,15 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: var(--primary-color);
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-header {
+    line-height: 1.15;
+  }
 }
 
 .modal-form-label {
@@ -1006,14 +1136,15 @@ img {
 }
 
 .modal-form-label.modal-form-policy {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
 }
 
-.modal-form-policy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .modal-form-label.modal-form-policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-policy::before {
@@ -1043,6 +1174,19 @@ img {
 
 .checkbox:checked:focus ~ .modal-form-policy::before {
   border-color: #0d5fa3;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form-policy {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-policy {
+    justify-content: center;
+  }
 }
 
 .modal-form-input {
