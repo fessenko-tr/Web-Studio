@@ -1,0 +1,18 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin line-height($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height / $font-size;
+}
+
+@mixin transition($prop-name) {
+  transition: $prop-name, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// @mixin grid-calc($rows, $margin) {
+//   flex-basis: calc(100% / $rows - $margin);
+// }

@@ -34,12 +34,10 @@
 }
 
 .pros-icon {
+  @include flex;
   width: 100%;
   height: 120px;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--btn-bg);
 }
 

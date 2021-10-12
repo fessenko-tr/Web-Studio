@@ -54,8 +54,8 @@ img {
 
 .wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -225,7 +225,7 @@ img {
 
 .social-list-icon {
   fill: var(--icon-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover .social-list-icon,
@@ -258,7 +258,7 @@ img {
 }
 
 .mobile-menu-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .js-close-menu:hover .mobile-menu-icon,
@@ -280,7 +280,7 @@ img {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 100;
   transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -297,12 +297,12 @@ img {
 
 .mobile-nav-list {
   font-size: 40px;
-  line-height: 1.17;
+  line-height: 1.175;
   color: var(--primary-color);
 }
 
 .mobile-nav-item {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-nav-item:not(:last-child) {
@@ -321,20 +321,20 @@ img {
 .mobile-contacts-phone {
   margin-bottom: 32px;
   font-size: 34px;
-  line-height: 1.17;
+  line-height: 1.17647;
   color: var(--hover-color);
 }
 
 .mobile-contacts-email {
   font-size: 24px;
-  line-height: 1.16;
+  line-height: 1.16667;
   color: var(--text-color);
 }
 
 .mobile-socials {
   display: flex;
   font-size: 18px;
-  line-height: 1.22;
+  line-height: 1.22222;
   color: var(--hover-color);
 }
 
@@ -638,7 +638,7 @@ img {
 }
 
 .header .link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .link:hover, .header .link:focus {
@@ -662,7 +662,7 @@ img {
   height: 4px;
   background-color: transparent;
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 1200px) {
@@ -825,12 +825,12 @@ img {
 }
 
 .pros-icon {
-  width: 100%;
-  height: 120px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
   background-color: var(--btn-bg);
 }
 
@@ -969,7 +969,7 @@ img {
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-link:hover, .clients-list-link:focus {
@@ -978,7 +978,7 @@ img {
 
 .clients-list-icon {
   fill: var(--icon-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-link:hover .clients-list-icon,
@@ -1223,7 +1223,7 @@ img {
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works-card-link:hover, .works-card-link:focus {
@@ -1232,7 +1232,7 @@ img {
 
 .works-card-link:hover .works-card-hovertext, .works-card-link:focus .works-card-hovertext {
   opacity: 1;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(0, -294px);
 }
 
